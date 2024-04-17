@@ -1,3 +1,16 @@
+Why does this exist?
+====================
+
+We needed to fork the original utm repository to add a new feature allowing negative northing
+values. See `PlayerData/utm <https://github.com/PlayerData/utm>`_. We are currently waiting on `this
+PR <https://github.com/Turbo87/utm/pull/113>`_ to be merged into the original repository. While this
+version is a private package, we need its versions to be available on our private Google Artifact
+Registry python package registry. Therefore we created this repository to build the necessary CI for
+this. It needs to not be named ``utm`` as this will cause naming conflicts with the PyPi package.
+
+**TL;DR:** This shouldn't exist, but it needs to until `this <https://github.com/Turbo87/utm/pull/113>`_
+is merged.
+
 utm
 ===
 
